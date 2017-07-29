@@ -23500,9 +23500,9 @@ var App = function (_React$Component) {
               _react2.default.createElement('span', { className: 'icon-bar' })
             ),
             _react2.default.createElement(
-              'a',
-              { className: 'navbar-brand', href: '#' },
-              'WebSiteName'
+              _reactRouterDom.Link,
+              { className: 'navbar-brand', to: '/' },
+              'React-Website'
             )
           ),
           _react2.default.createElement(
@@ -23513,94 +23513,38 @@ var App = function (_React$Component) {
               { className: 'nav navbar-nav' },
               _react2.default.createElement(
                 'li',
-                { className: 'active' },
+                { role: 'presentation' },
                 _react2.default.createElement(
-                  'a',
-                  { href: '#' },
+                  _reactRouterDom.Link,
+                  { to: '/' },
                   'Home'
                 )
               ),
               _react2.default.createElement(
                 'li',
-                { className: 'dropdown' },
+                { role: 'presentation' },
                 _react2.default.createElement(
-                  'a',
-                  { className: 'dropdown-toggle', 'data-toggle': 'dropdown', href: '#' },
-                  'Page 1 ',
-                  _react2.default.createElement('span', { className: 'caret' })
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  { className: 'dropdown-menu' },
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      _reactRouterDom.Link,
-                      { to: '/about' },
-                      'about'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      _reactRouterDom.Link,
-                      { to: '/' },
-                      'about2'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      _reactRouterDom.Link,
-                      { to: '/' },
-                      'about3'
-                    )
-                  )
+                  _reactRouterDom.Link,
+                  { to: '/about' },
+                  'About'
                 )
               ),
               _react2.default.createElement(
                 'li',
-                null,
+                { role: 'presentation' },
                 _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  'Page 2'
+                  _reactRouterDom.Link,
+                  { to: '/deals' },
+                  'Deals'
                 )
               ),
               _react2.default.createElement(
                 'li',
-                null,
+                { role: 'presentation' },
                 _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  'Page 3'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'nav navbar-nav navbar-right' },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  _react2.default.createElement('span', { className: 'glyphicon glyphicon-user' }),
-                  ' Sign Up'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  _react2.default.createElement('span', { className: 'glyphicon glyphicon-log-in' }),
-                  ' Login'
+                  _reactRouterDom.Link,
+                  { to: '/contact' },
+                  'Contact'
                 )
               )
             )
@@ -23642,6 +23586,14 @@ var _About = __webpack_require__(228);
 
 var _About2 = _interopRequireDefault(_About);
 
+var _Deals = __webpack_require__(230);
+
+var _Deals2 = _interopRequireDefault(_Deals);
+
+var _Contact = __webpack_require__(231);
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
 var _reactRouterDom = __webpack_require__(92);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -23655,6 +23607,8 @@ var Routesss = function Routesss() {
             null,
             _react2.default.createElement(_reactRouterDom.Route, { name: 'home', exact: true, path: '/', component: _weatherApp2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { name: 'about', exact: true, path: '/about', component: _About2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { name: 'deals', exact: true, path: '/deals', component: _Deals2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { name: 'contact', exact: true, path: '/contact', component: _Contact2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '*', component: _2.default })
         )
     );
@@ -26208,6 +26162,177 @@ var About = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = About;
+
+/***/ }),
+/* 229 */,
+/* 230 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Deals = function (_React$Component) {
+  _inherits(Deals, _React$Component);
+
+  function Deals() {
+    _classCallCheck(this, Deals);
+
+    return _possibleConstructorReturn(this, (Deals.__proto__ || Object.getPrototypeOf(Deals)).apply(this, arguments));
+  }
+
+  _createClass(Deals, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "row text-center" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            "Deals"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea velit, alias culpa id ad quia cumque sed aperiam eos rerum necessitatibus neque quibusdam et veniam! Consequuntur aperiam alias amet et nostrum tenetur doloremque adipisci aliquid eligendi atque natus ratione commodi aliquam labore sint reprehenderit, rem nihil modi magnam ducimus accusantium."
+          )
+        )
+      );
+    }
+  }]);
+
+  return Deals;
+}(_react2.default.Component);
+
+exports.default = Deals;
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+  _inherits(Contact, _React$Component);
+
+  function Contact() {
+    _classCallCheck(this, Contact);
+
+    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+  }
+
+  _createClass(Contact, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "center-block" },
+        _react2.default.createElement(
+          "form",
+          { id: "contact", action: "", method: "post" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Contact Us!"
+          ),
+          _react2.default.createElement(
+            "h4",
+            null,
+            "request for custom quote"
+          ),
+          _react2.default.createElement(
+            "fieldset",
+            null,
+            _react2.default.createElement("input", { placeholder: "Your name", type: "text", tabIndex: "1", required: true, autoFocus: true })
+          ),
+          _react2.default.createElement(
+            "fieldset",
+            null,
+            _react2.default.createElement("input", { placeholder: "Your Email Address", type: "email", tabIndex: "2", required: true })
+          ),
+          _react2.default.createElement(
+            "fieldset",
+            null,
+            _react2.default.createElement("input", { placeholder: "Your Phone Number (optional)", type: "tel", tabIndex: "3" })
+          ),
+          _react2.default.createElement(
+            "fieldset",
+            null,
+            _react2.default.createElement("input", { placeholder: "Your Web Site (optional)", type: "url", tabIndex: "4" })
+          ),
+          _react2.default.createElement(
+            "fieldset",
+            null,
+            _react2.default.createElement("textarea", { placeholder: "Type your message here....", tabIndex: "5", required: true })
+          ),
+          _react2.default.createElement(
+            "fieldset",
+            null,
+            _react2.default.createElement(
+              "button",
+              { name: "submit", type: "submit", id: "contact-submit", "data-submit": "...Sending" },
+              "Submit"
+            )
+          ),
+          _react2.default.createElement(
+            "p",
+            { className: "copyright" },
+            "Designed by ",
+            _react2.default.createElement(
+              "a",
+              { href: "https://google.com", target: "_blank", title: "Colorlib" },
+              "Eliran&Irad"
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
 
 /***/ })
 /******/ ]);
