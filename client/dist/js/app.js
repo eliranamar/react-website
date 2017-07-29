@@ -23484,42 +23484,126 @@ var App = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'ul',
-        { className: 'nav nav-tabs' },
+        'nav',
+        { className: 'navbar navbar-inverse' },
         _react2.default.createElement(
-          'li',
-          { role: 'presentation' },
+          'div',
+          { className: 'container-fluid' },
           _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/' },
-            'Home'
-          )
-        ),
-        _react2.default.createElement(
-          'li',
-          { role: 'presentation' },
+            'div',
+            { className: 'navbar-header' },
+            _react2.default.createElement(
+              'button',
+              { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+              _react2.default.createElement('span', { className: 'icon-bar' }),
+              _react2.default.createElement('span', { className: 'icon-bar' }),
+              _react2.default.createElement('span', { className: 'icon-bar' })
+            ),
+            _react2.default.createElement(
+              'a',
+              { className: 'navbar-brand', href: '#' },
+              'WebSiteName'
+            )
+          ),
           _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/about' },
-            'About'
-          )
-        ),
-        _react2.default.createElement(
-          'li',
-          { role: 'presentation' },
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/deals' },
-            'Deals'
-          )
-        ),
-        _react2.default.createElement(
-          'li',
-          { role: 'presentation' },
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/contact' },
-            'Contact'
+            'div',
+            { className: 'collapse navbar-collapse', id: 'myNavbar' },
+            _react2.default.createElement(
+              'ul',
+              { className: 'nav navbar-nav' },
+              _react2.default.createElement(
+                'li',
+                { className: 'active' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Home'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'dropdown' },
+                _react2.default.createElement(
+                  'a',
+                  { className: 'dropdown-toggle', 'data-toggle': 'dropdown', href: '#' },
+                  'Page 1 ',
+                  _react2.default.createElement('span', { className: 'caret' })
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'dropdown-menu' },
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      _reactRouterDom.Link,
+                      { to: '/about' },
+                      'about'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      _reactRouterDom.Link,
+                      { to: '/' },
+                      'about2'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      _reactRouterDom.Link,
+                      { to: '/' },
+                      'about3'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Page 2'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Page 3'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'ul',
+              { className: 'nav navbar-nav navbar-right' },
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  _react2.default.createElement('span', { className: 'glyphicon glyphicon-user' }),
+                  ' Sign Up'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  _react2.default.createElement('span', { className: 'glyphicon glyphicon-log-in' }),
+                  ' Login'
+                )
+              )
+            )
           )
         )
       );
