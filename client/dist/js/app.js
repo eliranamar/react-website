@@ -23554,6 +23554,10 @@ var _ = __webpack_require__(200);
 
 var _2 = _interopRequireDefault(_);
 
+var _About = __webpack_require__(228);
+
+var _About2 = _interopRequireDefault(_About);
+
 var _reactRouterDom = __webpack_require__(92);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -23566,6 +23570,7 @@ var Routesss = function Routesss() {
             _reactRouterDom.Switch,
             null,
             _react2.default.createElement(_reactRouterDom.Route, { name: 'home', exact: true, path: '/', component: _weatherApp2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { name: 'about', exact: true, path: '/about', component: _About2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '*', component: _2.default })
         )
     );
@@ -25997,6 +26002,128 @@ NavLink.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(12);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["i"]; });
 
+
+/***/ }),
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About() {
+    _classCallCheck(this, About);
+
+    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+  }
+
+  _createClass(About, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "row text-center" },
+          _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+              "h1",
+              null,
+              "About Us"
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis libero, sit. Assumenda numquam consequuntur eum deleniti non eligendi, quo corporis at qui consequatur ab amet deserunt accusamus molestiae quidem vitae necessitatibus ad aliquid minus, sapiente eius doloribus! Dicta architecto sit nemo ducimus aut omnis atque velit, consectetur animi iste, laudantium doloribus dolorem ullam tempore! Esse vel omnis nemo incidunt repudiandae dolore voluptatibus minima assumenda commodi odio tempora aliquam illo, voluptatem minus ex voluptas laboriosam doloremque praesentium, dolorem et consectetur, distinctio similique. Culpa accusantium deleniti qui recusandae vel, ipsam, dignissimos repudiandae, soluta magni consectetur quos et optio exercitationem expedita ratione! A."
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+              "h2",
+              null,
+              "Our Team"
+            ),
+            _react2.default.createElement("br", null),
+            _react2.default.createElement(
+              "div",
+              { className: "col-md-4 col-lg-4 col-sm-4 col-xs-12" },
+              _react2.default.createElement("img", { style: { maxWidth: "200px" }, className: "center-block img-responsive img-circle", src: "/img/tesla.jpg", alt: "" }),
+              _react2.default.createElement(
+                "h4",
+                null,
+                "Tesla"
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                "Full-Stack"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "col-md-4 col-lg-4 col-sm-4 col-xs-12" },
+              _react2.default.createElement("img", { style: { maxWidth: "200px" }, className: "center-block img-responsive img-circle", src: "/img/einstein.jpeg", alt: "" }),
+              _react2.default.createElement(
+                "h4",
+                null,
+                "Einstein"
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                "Team Leader"
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "col-md-4 col-lg-4 col-sm-4 col-xs-12" },
+              _react2.default.createElement("img", { style: { maxWidth: "200px" }, className: "center-block img-responsive img-circle", src: "/img/elon.png", alt: "" }),
+              _react2.default.createElement(
+                "h4",
+                null,
+                "Musk"
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                "Designer"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return About;
+}(_react2.default.Component);
+
+exports.default = About;
 
 /***/ })
 /******/ ]);
