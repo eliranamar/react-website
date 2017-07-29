@@ -6,13 +6,12 @@ import {BrowserRouter} from 'react-router-dom';
 
 class App extends React.Component {
   render() {
+    console.log('connected');
     return (
       <BrowserRouter>
         <div>
           <Header/>
-          <div className="container">
-            <Routesss/>
-          </div>
+          <Routesss/>
         </div>
       </BrowserRouter>
 

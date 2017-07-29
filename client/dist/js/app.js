@@ -11319,6 +11319,7 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
+      console.log('connected');
       return _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
         null,
@@ -11326,11 +11327,7 @@ var App = function (_React$Component) {
           'div',
           null,
           _react2.default.createElement(_Header2.default, null),
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            _react2.default.createElement(_Routes2.default, null)
-          )
+          _react2.default.createElement(_Routes2.default, null)
         )
       );
     }
